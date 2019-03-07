@@ -20,6 +20,9 @@ html,body,*
   height : 100%;
   position: relative;
   transition:  all 0.4s;
+  -webkit-transition: background-color 400ms linear;
+  -ms-transition: background-color 400ms linear;
+  transition: background-color 400ms linear;
 }
 
 
@@ -34,6 +37,9 @@ html,body,*
   min-width: 400px;
   min-height: 20px;
   text-align: center;
+  -webkit-transition: background-color 400ms linear;
+  -ms-transition: background-color 400ms linear;
+  transition: background-color 400ms linear;
 }
 
 .testDiv
@@ -47,18 +53,18 @@ html,body,*
 .inputbox
 {
   -webkit-appearance: none;
-  outline: navajowhite;
+  outline: none;
   border-width: 0px;
   background: transparent;
   font-size: 150px;
-  width: 65%;
-  max-width: 200px;
-  min-width: 200px; 
+  width: 65%; 
+  max-width: 250px;
+  min-width: 250px;
   text-align: center;
 }
 
 .hash-class
 {
   font-size:150px;
-  padding-right: 20px;
+  padding-right: 10px;
 }

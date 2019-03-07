@@ -43,8 +43,9 @@ class App extends Component {
       var ishex  = /([0-9A-F]{6}$)|([0-9A-F]{3}$)/i;
       if(ishex.test(passedvalue))
       {
+
         //let invc = this.getInverseColor(passedvalue);
-        console.log('true');
+        console.log('true'+passedvalue);
         this.setState({
           backgroundCC : passedvalue,
           backgroundCCTest : passedvalue
