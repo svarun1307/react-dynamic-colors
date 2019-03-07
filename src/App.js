@@ -43,7 +43,7 @@ class App extends Component {
       var ishex  = /([0-9A-F]{6}$)|([0-9A-F]{3}$)/i;
       if(ishex.test(passedvalue))
       {
-        let invc = this.getInverseColor(passedvalue);
+        //let invc = this.getInverseColor(passedvalue);
         console.log('true');
         this.setState({
           backgroundCC : passedvalue,
@@ -84,7 +84,7 @@ class App extends Component {
     return (
       <div className="container" style={containerStyle}>
           <div className="color-holder" style={containerStyle}>
-              #<input className="inputbox" onChange={this.changeColorValue} value={this.state.backgroundCC} maxLength="3" />
+              <span className="hash-class">#</span><input className="inputbox" onChange={this.changeColorValue} value={this.state.backgroundCC} maxLength="3" />
           </div>
           
       </div>

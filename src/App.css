@@ -1,7 +1,8 @@
-html,body
+html,body,*
 {
   width:100%;
   height : 100%;
+  font-family: 'Bubbler One', sans-serif;
 }
 
 #root
@@ -25,14 +26,14 @@ html,body
 .color-holder
 {
   position: absolute;
-  width: 30%;
-  height: 70%;
-  background: red;
+  width: 40%;
+  background: transparent;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   min-width: 400px;
-  min-height: 400px;
+  min-height: 20px;
+  text-align: center;
 }
 
 .testDiv
@@ -41,4 +42,23 @@ html,body
   z-index: -1000;
   opacity: 0;
   display: none;
+}
+
+.inputbox
+{
+  -webkit-appearance: none;
+  outline: navajowhite;
+  border-width: 0px;
+  background: transparent;
+  font-size: 150px;
+  width: 65%;
+  max-width: 200px;
+  min-width: 200px; 
+  text-align: center;
+}
+
+.hash-class
+{
+  font-size:150px;
+  padding-right: 20px;
 }
